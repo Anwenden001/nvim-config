@@ -21,7 +21,14 @@ vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappin
 vim.g.maplocalleader = "\\" -- Same for `maplocalleader`
 
 
+
+
 require("lazy").setup("plugins")
+
+require('java').setup()
+
+require('lspconfig').jdtls.setup({})
+
 
 require("mason").setup()
 
